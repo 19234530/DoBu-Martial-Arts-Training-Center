@@ -1,0 +1,198 @@
+/* Main CSS File (stylesheet.css) - For the index.html page */
+
+/* General Styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    background-color: #9080af;
+  }
+  
+  /* Navbar Styles */
+
+  .refined-navbar {
+    background-color:#6f42c1 ; /* cool purple*/
+    padding: 1.25rem 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-inline-end: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link::after {
+    content; '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition:width 0.3s ease;
+
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+
+  }
+
+  .nav-link:hover {
+    color: #facc15 !important; /* Yellow hover */
+
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* makes icon white */
+
+  }
+  /* Features Section */
+  .row.text-center .col-md-4 > div {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #9f94a0;
+    height: 100%;
+  }
+  
+  .row.text-center .col-md-4 > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bg-primary {
+    background color: #007bff;
+  }
+
+  .bg-success {
+    background-color: #28a745;
+
+  }
+
+  .bg-warning {
+
+    background-color: #ffc107;
+    color: #212529; /* Better contrast for text on yellow */
+  }
+  /* About Section */
+  .bg-light {
+    background-color: #b2a7bc!important;
+  }
+  
+  /* Image Styling */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img-fluid.rounded-4.shadow-lg {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+
+  /* Heading Styling */
+
+  h2.text-primary {
+
+    color: #007bff;
+    font-weight: 700;
+  }
+  
+  /* Button Styling  */
+
+  .btn-primary {
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+
+    background-color: #0056b3;
+  }
+
+  /* Class Schedule Section Styles */
+  .bg-purple {
+    background-color: #6f42c1;
+  }
+  
+  .schedule-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .schedule-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .schedule-card .card-header {
+    border-radius: 10px 10px 0 0 !important;
+    padding: 1.25rem;
+  }
+  
+  .schedule-times li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .schedule-times li:last-child {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 767.98px) {
+    .schedule-card {
+      margin-bottom: 1.5rem;
+    }
+  }
+  /* Testimonials Section */
+  .card.bg-secondary {
+    background-color: plum!important;
+    border: none;
+  }
+  
+  /* Footer Styles */
+  .social-btns .btn {
+    margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+    
+    .row.text-center div {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
+  
+
+  
