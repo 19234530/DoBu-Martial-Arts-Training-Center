@@ -167,7 +167,8 @@ body {
   /* Testimonials Section */
   .card.bg-secondary {
     background-color: plum!important;
-    border: none;
+    border-style: double;
+      
   }
   
   /* Footer Styles */
